@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Harsh from '../imgs/Harsh.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
         <img 
           alt="Professional portrait of a software developer" 
           className="relative rounded-2xl w-full h-[450px] object-cover shadow-xl" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2rDyMD2YJTcEoETdzwhR-iBPJsNzQVB2TN3i11DVSogHEEe0mcWlHSvYbK7ISjHIzQjdFNSXMzdBN5vVaTnS2zOgOdAiODSmQuK4twhLFPsNbcr3U0meS0ZCjsBtGh4tZ9_7sRco6Fzc77944cSoa7SogihhEyWPVqy4HNsVh6pqcB2n9ANIgiTpHY2Okd0htD2aCZFdqy_NLgZCBFCcRco1odSxDvkVnN9PJkk9JsupT8WSg4KL_28qNjkWWs5O6wLO8FIafoBEt"
+          src={Harsh}
         />
       </div>
       <div className="lg:col-span-7 flex flex-col justify-center">
@@ -18,9 +19,11 @@ const Hero: React.FC = () => {
           Building digital experiences with <span className="text-primary">precision</span> and <span className="text-primary">passion</span>.
         </h1>
         <div className="space-y-4">
-          <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-            I am a dedicated Full-Stack Developer with over 5 years of experience building scalable web applications. My journey started with a fascination for how things work under the hood, leading me to master the entire web development lifecycle.
-          </p>
+       <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+  I am a passionate Full-Stack Developer fresher with a strong interest in building scalable web applications and learning the complete web development lifecycle from front-end to back-end.
+</p>
+
+
           <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
             My expertise spans across modern JavaScript frameworks like React and Vue, cloud infrastructure with AWS, and robust database design. I thrive on solving complex architectural challenges and delivering high-quality, user-centric products that solve real-world problems.
           </p>

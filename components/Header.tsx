@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           </svg>
         </div>
         {/* Fix: Changed 'class' to 'className' to resolve React hydration errors */}
-        <h2 className="text-xl font-bold tracking-tight">DevPortfolio</h2>
+        <h2 className="text-xl font-bold tracking-tight">Harsh</h2>
       </div>
       {/* Fix: Changed 'class' to 'className' to resolve React hydration errors */}
       <div className="flex flex-1 justify-end items-center gap-4 md:gap-8">
