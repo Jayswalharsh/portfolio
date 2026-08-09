@@ -1,15 +1,18 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
+import Projects from './components/Projects';
+import Journey from './components/Journey';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GeminiChat from './components/GeminiChat';
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const appRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -20,19 +23,31 @@ const App: React.FC = () => {
   }, [isDarkMode]);
 
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    const app = appRef.current;
+    if (!app) return;
+    const bounds = app.getBoundingClientRect();
+    app.style.setProperty('--mouse-x', `${((event.clientX - bounds.left) / bounds.width) * 100}%`);
+    app.style.setProperty('--mouse-y', `${((event.clientY - bounds.top) / bounds.height) * 100}%`);
+  };
 
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <div ref={appRef} onPointerMove={handlePointerMove} className="portfolio-app relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <div className="portfolio-background" aria-hidden="true" />
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="flex-1 flex flex-col items-center py-16 px-4 md:px-10 lg:px-40">
-        <div className="w-full max-w-[1100px] flex flex-col gap-24">
-          <Hero />
-          <hr className="border-slate-200 dark:border-slate-800" />
-          <Skills />
-          <hr className="border-slate-200 dark:border-slate-800" />
-          <Certifications />
-          <hr className="border-slate-200 dark:border-slate-800" />
-          <Contact />
+      <main className="site-content relative z-10 flex-1 flex flex-col items-center py-12 px-4 sm:px-6 md:py-16 md:px-10 lg:px-12">
+        <div className="w-full max-w-[1100px] flex flex-col gap-16 md:gap-24">
+          <div className="section-hero"><Hero /></div>
+          <hr className="section-divider" />
+          <div className="section-projects"><Projects /></div>
+          <hr className="section-divider" />
+          <div className="section-skills"><Skills /></div>
+          <hr className="section-divider" />
+          <div className="section-certifications"><Certifications /></div>
+          <hr className="section-divider" />
+          <div className="section-journey"><Journey /></div>
+          <hr className="section-divider" />
+          <div className="section-contact"><Contact /></div>
         </div>
       </main>
       <Footer />

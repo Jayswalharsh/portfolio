@@ -1,0 +1,9 @@
+import React from 'react';
+const Journey: React.FC = () => <section id="journey" className="scroll-mt-28">
+  <div className="text-center mb-10"><p className="text-primary text-sm font-bold uppercase tracking-widest mb-2">Background</p><h2 className="text-3xl sm:text-4xl font-bold">Education & Achievements</h2></div>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6"><h3 className="font-bold text-xl mb-5">Education</h3><div className="space-y-5 text-slate-600 dark:text-slate-300"><div><p className="font-semibold text-slate-900 dark:text-white">B.Tech, Computer Science Engineering <span className="float-right text-sm text-primary">2021–2025</span></p><p>Technocrat Institute of Technology & Science, Bhopal · CGPA: 7.52</p></div><div><p className="font-semibold text-slate-900 dark:text-white">Class 12 <span className="float-right text-sm text-primary">2020</span></p><p>Saraswati Higher Secondary School, Sidhi, MP · 75%</p></div><div><p className="font-semibold text-slate-900 dark:text-white">Class 10 <span className="float-right text-sm text-primary">2018</span></p><p>Saraswati Higher Secondary School, Sidhi, MP · 87%</p></div></div></div>
+    <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6"><h3 className="font-bold text-xl mb-5">Training & Achievements</h3><p className="font-semibold text-slate-900 dark:text-white">Java Full Stack Training — JSPiders</p><p className="mt-1 text-slate-600 dark:text-slate-300">Core and Advanced Java, JDBC, Spring Boot, Hibernate, React.js, REST APIs and web applications.</p><ul className="mt-5 space-y-3 text-slate-600 dark:text-slate-300"><li>• Solved 100+ Data Structures and Algorithms problems on LeetCode.</li><li>• Strong understanding of OOP, Collections and Exception Handling.</li></ul></div>
+  </div>
+</section>;
+export default Journey;

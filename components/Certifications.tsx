@@ -6,39 +6,25 @@ const Certifications: React.FC = () => {
 
   const certs = [
     {
-      title: 'AWS Certified Solutions Architect',
-      org: 'Amazon Web Services',
-      date: 'Earned Jan 2023',
-      icon: 'verified',
-      image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1000&auto=format&fit=crop'
+      title: 'Programming in Java',
+      org: 'Certification listed on resume',
+      date: 'Completed',
+      icon: 'code',
+      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1000&auto=format&fit=crop'
     },
     {
-      title: 'Meta Front-End Developer',
-      org: 'Meta Platforms, Inc.',
-      date: 'Earned March 2023',
+      title: 'Learn Java',
+      org: 'IBM',
+      date: 'Completed',
       icon: 'workspace_premium',
       image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop'
     },
     {
-      title: 'Professional Scrum Master I',
-      org: 'Scrum.org',
-      date: 'Earned June 2023',
+      title: 'Lumenore Deep Dive Certification',
+      org: 'Lumenore',
+      date: 'Completed',
       icon: 'code',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop'
-    },
-    {
-      title: 'Google Cloud Associate',
-      org: 'Google Cloud',
-      date: 'Earned Sept 2023',
-      icon: 'cloud_done',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop'
-    },
-    {
-      title: 'CompTIA Security+',
-      org: 'CompTIA',
-      date: 'Earned Nov 2023',
-      icon: 'security',
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop'
     }
   ];
 

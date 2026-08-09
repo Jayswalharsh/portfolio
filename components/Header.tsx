@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -7,8 +7,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const links = [
+    ['Projects', '#projects'], ['Skills', '#skills'], ['Certifications', '#certifications'],
+    ['About', '#about'], ['Contact', '#contact']
+  ];
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7ebf3] dark:border-slate-800 px-6 md:px-10 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+    <header className="border-b border-solid border-[#e7ebf3] dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+      <div className="flex items-center justify-between whitespace-nowrap px-4 py-4 sm:px-6 md:px-10">
       <div className="flex items-center gap-4 text-[#0d121b] dark:text-white">
         <div className="size-6 text-primary">
           <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -22,13 +28,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
       {/* Fix: Changed 'class' to 'className' to resolve React hydration errors */}
       <div className="flex flex-1 justify-end items-center gap-4 md:gap-8">
         {/* Fix: Changed 'class' to 'className' to resolve React hydration errors */}
-        <nav className="hidden md:flex items-center gap-8">
-          {/* Fix: Changed 'class' to 'className' for all navigation anchors */}
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#">Projects</a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#certifications">Certifications</a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+        <nav className="hidden lg:flex items-center gap-6">
+          {links.map(([label, href]) => <a key={href} className="text-sm font-medium hover:text-primary transition-colors" href={href}>{label}</a>)}
         </nav>
         <div className="flex items-center gap-4">
           <button 
@@ -40,11 +41,18 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               {isDarkMode ? 'light_mode' : 'dark_mode'}
             </span>
           </button>
-          <button className="bg-primary hover:bg-primary/90 text-white rounded-lg h-10 px-6 text-sm font-bold transition-all shadow-sm">
+          <a href="#contact" className="hidden sm:flex items-center bg-primary hover:bg-primary/90 text-white rounded-lg h-10 px-6 text-sm font-bold transition-all shadow-sm">
             Hire Me
+          </a>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 text-slate-700 dark:text-slate-200" aria-label="Open navigation" aria-expanded={menuOpen}>
+            <span className="material-symbols-outlined">{menuOpen ? 'close' : 'menu'}</span>
           </button>
         </div>
       </div>
+      </div>
+      {menuOpen && <nav className="lg:hidden grid grid-cols-2 gap-x-4 gap-y-1 border-t border-slate-200 dark:border-slate-800 px-4 py-4 sm:px-6">
+        {links.map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)} className="rounded-lg px-3 py-2 text-sm font-medium hover:bg-primary/10 hover:text-primary">{label}</a>)}
+      </nav>}
     </header>
   );
 };
