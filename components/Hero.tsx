@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         />
       </div>
       <div className="hero-copy lg:col-span-7 flex flex-col justify-center">
-        <h2 className="text-primary text-sm font-bold uppercase tracking-widest mb-2">Hello, I’m Harsh Jayswal</h2>
+        <p className="text-primary text-sm font-bold uppercase tracking-widest mb-2">Hello, I’m Harsh Jayswal</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white leading-tight">
           Java Full-Stack Developer building <span className="text-primary">reliable</span> web applications.
         </h1>

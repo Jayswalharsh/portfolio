@@ -202,6 +202,8 @@ footer, .dark footer { position: relative; z-index: 1; background: var(--header-
 .portfolio-app > .fixed > div { background-color: var(--card); border-color: var(--border-subtle); color: var(--text-primary); }
 .portfolio-app > .fixed input { background: var(--muted); color: var(--text-primary); }
 
+section[id] { scroll-margin-top: 7rem; }
+
 @keyframes aurora { from { transform: translate3d(-4%, 0, 0) scale(.96); } to { transform: translate3d(8%, 12%, 0) scale(1.08); } }
 @keyframes drift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(18px, -22px, 0); } }
 
