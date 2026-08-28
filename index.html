@@ -1,60 +1,191 @@
-
 <!DOCTYPE html>
 <html class="dark" lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>DevPortfolio - Full Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Harsh Jayswal | Java Full-Stack Developer</title>
+
+    <meta
+        name="description"
+        content="Harsh Jayswal is a Java Full-Stack Developer building scalable Spring Boot, React.js, SQL, and REST API applications."
+    />
+
+    <meta name="author" content="Harsh Jayswal" />
+
+    <meta
+        name="keywords"
+        content="Harsh Jayswal, Java Full-Stack Developer, Spring Boot developer, React developer, REST API developer, Java developer portfolio"
+    />
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Google Search Console Verification -->
+    <meta
+        name="google-site-verification"
+        content="V3NcfbpijnG6j7h5TY5eQVH9TdynRGP__ddeJTekfU0"
+    />
+
+    <meta name="theme-color" content="#0B1120" />
+
+    <!-- Canonical URL -->
+    <link
+        rel="canonical"
+        href="https://harshjayswal.vercel.app/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+        property="og:url"
+        content="https://harshjayswal.vercel.app/"
+    />
+    <meta
+        property="og:site_name"
+        content="Harsh Jayswal Portfolio"
+    />
+    <meta
+        property="og:title"
+        content="Harsh Jayswal | Java Full-Stack Developer"
+    />
+    <meta
+        property="og:description"
+        content="Explore Java, Spring Boot, React.js, SQL, and REST API projects by Harsh Jayswal."
+    />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+        name="twitter:title"
+        content="Harsh Jayswal | Java Full-Stack Developer"
+    />
+    <meta
+        name="twitter:description"
+        content="Explore Java, Spring Boot, React.js, SQL, and REST API projects by Harsh Jayswal."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "name": "Harsh Jayswal",
+                "url": "https://harshjayswal.vercel.app/",
+                "jobTitle": "Java Full-Stack Developer",
+                "description": "Java Full-Stack Developer specialising in Spring Boot, React.js, SQL, and REST APIs.",
+                "email": "mailto:jaiswalharsh20389@gmail.com",
+                "sameAs": [
+                    "https://www.linkedin.com/in/harshx01",
+                    "https://github.com/Jayswalharsh"
+                ],
+                "knowsAbout": [
+                    "Java",
+                    "Spring Boot",
+                    "React.js",
+                    "SQL",
+                    "MySQL",
+                    "REST APIs",
+                    "Hibernate"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "name": "Harsh Jayswal Portfolio",
+                "url": "https://harshjayswal.vercel.app/",
+                "description": "Portfolio of Harsh Jayswal, a Java Full-Stack Developer."
+            }
+        ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
     <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#3B82F6",
-                "secondary": "#8B5CF6",
-                "highlight": "#06B6D4",
-                "success": "#22C55E",
-                "background-light": "#F8FAFC",
-                "background-dark": "#0B1120",
-              },
-              fontFamily: {
-                "display": ["Inter", "sans-serif"]
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-            },
-          },
-        }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#8B5CF6",
+                        highlight: "#06B6D4",
+                        success: "#22C55E",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0B1120"
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
     </script>
+
+    <!-- Custom Tailwind Styles -->
     <style type="text/tailwindcss">
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .no-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
         html {
             scroll-behavior: smooth;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+
+    <!-- Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "react/": "https://esm.sh/react@^19.2.3/",
+            "react": "https://esm.sh/react@^19.2.3",
+            "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+            "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+        }
+    }
+    </script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/index.css" />
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-[#0d121b] dark:text-white transition-colors duration-300">
+
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+
+    <!-- React Entry Point -->
+    <script type="module" src="/index.tsx"></script>
+
 </body>
 </html>
