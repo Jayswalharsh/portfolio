@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
     ['About', '#about'], ['Contact', '#contact']
   ];
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-solid border-[#e7ebf3] bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-dark/80">
+    <header className="fixed top-0 right-0 left-0 z-50 w-full border-b border-solid border-[#e7ebf3] bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-dark/80">
       <div className="flex items-center justify-between whitespace-nowrap px-4 py-4 sm:px-6 md:px-10">
       <div className="flex items-center gap-4 text-[#0d121b] dark:text-white">
         <div className="size-6 text-primary">
