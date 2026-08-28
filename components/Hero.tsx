@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="lg:col-span-5 relative group">
         <div className="hero-photo-glow absolute inset-0 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-6"></div>
         <img 
-          alt="Professional portrait of a software developer" 
+          alt="Harsh Jayswal, Java Full-Stack Developer"
           className="hero-photo relative rounded-2xl w-full h-auto max-h-[560px] object-contain shadow-xl" 
           src={Harsh}
         />

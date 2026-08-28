@@ -35,7 +35,7 @@ const App: React.FC = () => {
     <div ref={appRef} onPointerMove={handlePointerMove} className="portfolio-app relative flex min-h-screen w-full flex-col overflow-x-hidden">
       <div className="portfolio-background" aria-hidden="true" />
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <main className="site-content relative z-10 flex-1 flex flex-col items-center py-12 px-4 sm:px-6 md:py-16 md:px-10 lg:px-12">
+      <main className="site-content relative z-10 flex flex-1 flex-col items-center px-4 pb-12 pt-28 sm:px-6 md:px-10 md:pb-16 md:pt-32 lg:px-12">
         <div className="w-full max-w-[1100px] flex flex-col gap-16 md:gap-24">
           <div className="section-hero"><Hero /></div>
           <hr className="section-divider" />
