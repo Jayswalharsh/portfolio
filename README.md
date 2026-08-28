@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Harsh Jayswal
 
-# Run and deploy your AI Studio app
+## Java Full-Stack Developer
 
-This contains everything you need to run your app locally.
+Hi, I'm Harsh Jayswal, a Java Full-Stack Developer focused on building scalable, reliable, and user-friendly web applications.
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+I specialize in Java, Spring Boot, React.js, REST APIs, SQL, MySQL, Hibernate, and modern web technologies.
 
-## Run Locally
+## Portfolio
 
-**Prerequisites:**  Node.js
+🌐 Visit my portfolio:
 
+https://harshjayswal.vercel.app/
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## About Me
+
+I build full-stack applications with a strong focus on backend development, RESTful APIs, database integration, and responsive frontend experiences.
+
+My primary areas of expertise include:
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- RESTful APIs
+- React.js
+- JavaScript
+- TypeScript
+- SQL
+- MySQL
+- Git & GitHub
+
+## Featured Projects
+
+Check out my GitHub repositories to explore my projects, source code, and development work.
+
+GitHub:
+https://github.com/Jayswalharsh
+
+## Connect With Me
+
+LinkedIn:
+https://www.linkedin.com/in/harshx01
+
+GitHub:
+https://github.com/Jayswalharsh
+
+Portfolio:
+https://harshjayswal.vercel.app/
+
+## Technologies
+
+Java • Spring Boot • React.js • JavaScript • TypeScript • REST APIs • SQL • MySQL • Hibernate • Spring Data JPA • Git • GitHub
+
+---
+
+Built and maintained by Harsh Jayswal.
